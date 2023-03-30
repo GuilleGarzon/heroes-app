@@ -5,7 +5,6 @@ import { AuthContext } from '../../auth/context/AuthContext';
 export const Navbar = () => {
 
   const { user } = useContext( AuthContext );
-  console.log("🚀 ~ file: Navbar.jsx:8 ~ Navbar ~ user:", user);
 
   const navigate = useNavigate();
 
