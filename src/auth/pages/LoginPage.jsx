@@ -9,9 +9,11 @@ export const LoginPage = () => {
 
   const handleLogin = () => {
 
+    const lastPath = localStorage.getItem('lastPath') || '/';
+
     login('Guillermo Garzón');
 
-    navigate('/', {
+    navigate( lastPath, {
       replace: true
     });
   }
